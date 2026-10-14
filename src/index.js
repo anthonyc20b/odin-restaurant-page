@@ -1,3 +1,3 @@
 import "./styles.css";
-
-alert("It's working!")
+import {createHomePage} from "./home.js";
+createHomePage();
