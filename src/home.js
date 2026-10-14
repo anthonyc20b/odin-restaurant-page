@@ -1,6 +1,6 @@
-function createWelcome() {
-    const displayContainer = document.getElementById("content");
+const displayContainer = document.getElementById("content");
 
+function createWelcome() {
     const welcomeContainer = document.createElement("div");
     welcomeContainer.id = "welcome-header";
     displayContainer.appendChild(welcomeContainer);
