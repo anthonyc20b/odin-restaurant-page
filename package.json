@@ -1,0 +1,27 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "Using the DOM to generate the entire website structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonyc20b/odin-restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/anthonyc20b/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/anthonyc20b/odin-restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.5",
+    "html-webpack-plugin": "^5.6.8",
+    "style-loader": "^4.0.0",
+    "webpack-cli": "^7.2.3"
+  }
+}
