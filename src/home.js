@@ -18,7 +18,7 @@ function createDescription(){
     const descriptionText = document.createElement("p");
     descriptionText.textContent = "Serving classics from the outer rim since 30 BBY! Your droids are welcome here!";
     descriptionContainer.appendChild(descriptionText);
-}
+};
 
 function createTestimonial(){
     const testimonialContainer = document.createElement("div");
@@ -31,7 +31,7 @@ function createTestimonial(){
     starship for. Atmosphere's sharp too, plenty of dark booths, fast exits, and ugly Rodians. Five stars. Just don't ask to see my credentials.
     - Han Solo, Captain of the Millennium Falcon"`;
     testimonialContainer.appendChild(testimonialText);
-}
+};
 
 function createHours(){
     const hoursContainer = document.createElement("div");
@@ -49,22 +49,32 @@ function createHours(){
         { day: "Corellian Prime", hours: "1500 - 0100hrs (3:00pm - 1:00am)"},
         { day: "Outer Rim Orbit", hours: "1200 - 0100hrs (12:00pm - 1:00am)"},
         { day: "Twin Suns Down", hours: "DOCKING BAY CLOSED"}
-    ]
+    ];
 
     for (let i = 0; i < hoursData.length; i++){
         const eachDay = document.createElement("p");
         eachDay.classList.add("hours-schedule");
         eachDay.textContent = `${hoursData[i].day}: ${hoursData[i].hours}`;
         hoursContainer.appendChild(eachDay);
-    }
+    };
+};
 
-}
+function createFooter(){
+    const footerContainer = document.createElement("div");
+    footerContainer.id = "footer-container";
+    displayContainer.appendChild(footerContainer);
+
+    const footerText = document.createElement("p");
+    footerText.textContent = "Background image made by Logan Voss - https://unsplash.com/@loganvoss";
+    footerContainer.appendChild(footerText);
+};
 
 function createHomePage() {
     createWelcome();
     createDescription();
     createTestimonial();
     createHours();
-}
+    createFooter();
+};
 
 export {createHomePage};
