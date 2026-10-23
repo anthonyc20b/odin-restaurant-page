@@ -35,12 +35,14 @@ function createTestimonial(){
 
 function createHours(){
     const hoursContainer = document.createElement("div");
-    hoursContainer.id = "hours";
+    hoursContainer.id = "hours-container";
     displayContainer.appendChild(hoursContainer);
 
     const hoursHeadText = document.createElement("h3");
     hoursHeadText.textContent = "Hours";
     hoursContainer.appendChild(hoursHeadText);
+
+    const mondayHours = document.createElement
 }
 
 function createHomePage() {
