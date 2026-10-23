@@ -42,7 +42,22 @@ function createHours(){
     hoursHeadText.textContent = "Hours";
     hoursContainer.appendChild(hoursHeadText);
 
-    const mondayHours = document.createElement
+    const hoursData = [
+        { day: "First Rotation", hours: "1600 - 2200hrs (4:00pm - 10:00pm)" },
+        { day: "Second Rotation", hours: "1600 - 2200hrs (4:00pm - 10:00pm)"},
+        { day: "Twin Suns Rising", hours: "1600 - 2300hrs (4:00pm - 11:00pm)"},
+        { day: "Corellian Prime", hours: "1500 - 0100hrs (3:00pm - 1:00am)"},
+        { day: "Outer Rim Orbit", hours: "1200 - 0100hrs (12:00pm - 1:00am)"},
+        { day: "Twin Suns Down", hours: "DOCKING BAY CLOSED"}
+    ]
+
+    for (let i = 0; i < hoursData.length; i++){
+        const eachDay = document.createElement("p");
+        eachDay.classList.add("hours-schedule");
+        eachDay.textContent = `${hoursData[i].day}: ${hoursData[i].hours}`;
+        hoursContainer.appendChild(eachDay);
+    }
+
 }
 
 function createHomePage() {
