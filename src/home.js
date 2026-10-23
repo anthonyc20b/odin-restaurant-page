@@ -33,10 +33,21 @@ function createTestimonial(){
     testimonialContainer.appendChild(testimonialText);
 }
 
+function createHours(){
+    const hoursContainer = document.createElement("div");
+    hoursContainer.id = "hours";
+    displayContainer.appendChild(hoursContainer);
+
+    const hoursHeadText = document.createElement("h3");
+    hoursHeadText.textContent = "Hours";
+    hoursContainer.appendChild(hoursHeadText);
+}
+
 function createHomePage() {
     createWelcome();
     createDescription();
     createTestimonial();
+    createHours();
 }
 
 export {createHomePage};
