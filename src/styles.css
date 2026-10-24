@@ -2,6 +2,7 @@
     --content-background-color: rgba(10, 15, 30, 0.85);
     --primary-border-color: rgba(0, 212, 255, 0.4);
     --primary-text-color: #F0F4F8;
+    --secondary-text-color: #94A3B8;
     --accent-text-color: #FFB800;
 }
 
@@ -81,4 +82,8 @@ nav > button {
 
 .menu-item-price {
     color: var(--accent-text-color);
+}
+
+.menu-item-description {
+    color: var(--secondary-text-color);
 }
