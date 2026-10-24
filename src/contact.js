@@ -15,8 +15,8 @@ function createContact(){
     displayContainer.appendChild(contactContent);
 
     const staffMembers = [
-        {name: "Wuher — Head Bartender & Security Coordinator", frequency: "Channel 94-Alpha", role: 'Drink orders, keeping the peace, enforcing the "No Droids Allowed" policy.'},
-        {name: "Ponda Baba & Dr. Evazan — VIP Booking & Hospitality", frequency: "Channel 12-Beta", role: "Group reservations, table upgrades, unwanted guest removal."},
+        {name: "Wuher — Head Bartender & Security Coordinator", frequency: "Frequency: Channel 94-Alpha", role: 'Drink orders, keeping the peace, enforcing the "No Droids Allowed" policy.'},
+        {name: "Ponda Baba & Dr. Evazan — VIP Booking & Hospitality", frequency: "Frequency: Channel 12-Beta", role: "Group reservations, table upgrades, unwanted guest removal."},
         {name: "IG-88 (Unit 04) — Lost Cargo & Found Property", frequency: "Frequency: Transponder Code 000-IG", role: "Tracking down left-behind blaster holsters, dropped credit pouches, and misplaced astromech droids."}
     ]
 
