@@ -1,3 +1,5 @@
+/* Global Styles */
+
 :root {
     --content-background-color: rgba(10, 15, 30, 0.85);
     --primary-border-color: rgba(0, 212, 255, 0.4);
@@ -17,6 +19,8 @@ body {
     min-height: 100vh;
     margin: 0px;
 }
+
+/* Navigation and footer specific */
 
 #navigation-header {
     display: flex;
@@ -54,6 +58,8 @@ nav > button {
     padding: 10px;
 }
 
+/* Content Container */
+
 #content {
     display: flex;
     flex-direction: column;
@@ -68,6 +74,8 @@ nav > button {
     margin-bottom: 50px;
 }
 
+/* Cards Structure Global  */
+
 .menu-card {
     background: var(--content-background-color);
     border: 1px solid rgba(0, 212, 255, 0.4);
@@ -78,6 +86,8 @@ nav > button {
     padding: 24px;
     margin: 20px auto;
 }
+
+/* Menu specific */
 
 .menu-item-price {
     color: var(--accent-text-color);
