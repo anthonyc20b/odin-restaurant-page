@@ -2,7 +2,7 @@ const displayContainer = document.getElementById("content");
 
 function createMain(){
     const mainMenuHeader = document.createElement("div");
-    mainMenuHeader.classList.add("menu-header");
+    mainMenuHeader.classList.add("main-menu-header");
     displayContainer.appendChild(mainMenuHeader);
 
     const mainHeaderText = document.createElement("h2");
@@ -21,6 +21,7 @@ function createMain(){
         {name: "Tip-Yat Fried Chicken & Waffles", description: "Golden, crispy Endor avian breast served over a toasted blue-corn grid-waffle, drizzled with sweet amber-sap syrup from the Great Trees.", price: "19 credits"}
     ]
 
+    // Iterates over the mainItems array to create a container, add a header, and add the description and price for each item. Cleaner than hand written
     for (let i = 0; i < mainItems.length; i++){
         const itemContainer = document.createElement("div");
         itemContainer.classList.add("menu-item")
@@ -43,8 +44,52 @@ function createMain(){
     }
 };
 
+function createSides(){
+    const sidesHeader = document.createElement("div");
+    sidesHeader.classList.add("sides-menu-header");
+    displayContainer.appendChild(sidesHeader);
+
+    const sidesHeaderText = document.createElement("h2");
+    sidesHeaderText.textContent = "Side Dishes & Starters";
+    sidesHeader.appendChild(sidesHeaderText);
+
+    const sidesContent = document.createElement("div");
+    sidesContent.classList.add("sides-content")
+    displayContainer.appendChild(sidesContent);
+
+    const sideItems = [
+        {name: "Rancor Tooth Garlic Bread", description: "Thick wedges of baked artisan loaf slathered in roasted garlic butter, melted blue-milk cheese, and toasted brown under a heat emitter.", price: "8 credits"},
+        {name: "Crispy Tauntaun Riblets", description: "Glaciated Hoth ice-ribs slow-roasted over open coals and tossed in a sweet-and-spicy Corellian mustard glaze. Keeps you warm even inside a snowspeeder.", price: "12 credits"},
+        {name: "Gundark Ear Strips", description: "Strips of tender, peppered pork loin flash-fried in a jagged batter and served with a side of creamy Naboo garlic aioli. (They say if you pull one, it pulls back).", price: "10 credits"},
+        {name: "Kessel Spice Mud-Horn Wings", description: "Jumbo avian wings tossed in an authentic Mud-Horn egg-yolk butter sauce and dusted with contraband spice from the spice mines.", price: "13 credits"}
+    ]
+    
+    // Iterates over the sideItems array to create a container, add a header, and add the description and price for each item. Cleaner than hand written
+    for (let i = 0; i < sideItems.length; i++){
+        const itemContainer = document.createElement("div");
+        itemContainer.classList.add("menu-item")
+        sidesContent.appendChild(itemContainer);
+
+        const itemName = document.createElement("h3");
+        itemName.classList.add("menu-item-name");
+        itemName.textContent = sideItems[i].name;
+        itemContainer.appendChild(itemName);
+
+        const itemDescription = document.createElement("p");
+        itemDescription.classList.add("menu-item-description");
+        itemDescription.textContent = sideItems[i].description;
+        itemContainer.appendChild(itemDescription);
+
+        const itemPrice = document.createElement("p");
+        itemPrice.classList.add("menu-item-price");
+        itemPrice.textContent = sideItems[i].price;
+        itemContainer.appendChild(itemPrice);
+    }
+};
+
 function createMenu(){
     createMain();
+    createSides();
 };
 
 export {createMenu};
