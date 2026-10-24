@@ -72,7 +72,7 @@ nav > button {
 #welcome-header, #description, #testimonial, #hours-container, .menu-header, .menu-content, .contact-header, .staff-member-card {
     background: var(--content-background-color);
     border: 1px solid rgba(0, 212, 255, 0.4);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), 0 0 15px var(--primary-border-color);
     backdrop-filter: blur(8px); /* Blurs the hyperspace lines behind the card */
     border-radius: 12px;
     color: var(--primary-text-color);
