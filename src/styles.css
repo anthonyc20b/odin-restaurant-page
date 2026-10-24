@@ -54,7 +54,6 @@ nav > button {
     padding: 10px;
 }
 
-/* Begin styling for the home page, will create a separate imported styles file for that page specifically once done testing */
 #content {
     display: flex;
     flex-direction: column;
