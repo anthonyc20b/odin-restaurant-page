@@ -3,7 +3,7 @@ const displayContainer = document.getElementById("content");
 // Using just a single function here as there will only be one section on this page.
 function createContact(){
     const contactHeader = document.createElement("div");
-    contactHeader.classList.add("contact-header");
+    contactHeader.classList.add("contact-header", "menu-card");
     displayContainer.appendChild(contactHeader);
 
     const headerText = document.createElement("h2");
@@ -22,7 +22,7 @@ function createContact(){
 
     for (let i = 0; i < staffMembers.length; i++){
         const staffCard = document.createElement("div");
-        staffCard.classList.add("staff-member-card");
+        staffCard.classList.add("staff-member-card", "menu-card");
         contactContent.appendChild(staffCard);
 
         const staffName = document.createElement("h3")
