@@ -3,6 +3,7 @@ const displayContainer = document.getElementById("content");
 function createWelcome() {
     const welcomeContainer = document.createElement("div");
     welcomeContainer.id = "welcome-header";
+    welcomeContainer.classList.add("menu-card")
     displayContainer.appendChild(welcomeContainer);
 
     const welcomeText = document.createElement("h1");
@@ -13,6 +14,7 @@ function createWelcome() {
 function createDescription(){
     const descriptionContainer = document.createElement("div");
     descriptionContainer.id = "description";
+    descriptionContainer.classList.add("menu-card")
     displayContainer.appendChild(descriptionContainer);
 
     const descriptionText = document.createElement("p");
@@ -23,6 +25,7 @@ function createDescription(){
 function createTestimonial(){
     const testimonialContainer = document.createElement("div");
     testimonialContainer.id = "testimonial";
+    testimonialContainer.classList.add("menu-card")
     displayContainer.appendChild(testimonialContainer);
 
     const testimonialText = document.createElement("p");
@@ -36,6 +39,7 @@ function createTestimonial(){
 function createHours(){
     const hoursContainer = document.createElement("div");
     hoursContainer.id = "hours-container";
+    hoursContainer.classList.add("menu-card")
     displayContainer.appendChild(hoursContainer);
 
     const hoursHeadText = document.createElement("h3");
