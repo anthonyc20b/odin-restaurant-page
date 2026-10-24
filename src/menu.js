@@ -8,6 +8,13 @@ const mainItems = [
         {name: "Tip-Yat Fried Chicken & Waffles", description: "Golden, crispy Endor avian breast served over a toasted blue-corn grid-waffle, drizzled with sweet amber-sap syrup from the Great Trees.", price: "19 credits"}
     ]
 
+const sideItems = [
+    {name: "Rancor Tooth Garlic Bread", description: "Thick wedges of baked artisan loaf slathered in roasted garlic butter, melted blue-milk cheese, and toasted brown under a heat emitter.", price: "8 credits"},
+    {name: "Crispy Tauntaun Riblets", description: "Glaciated Hoth ice-ribs slow-roasted over open coals and tossed in a sweet-and-spicy Corellian mustard glaze. Keeps you warm even inside a snowspeeder.", price: "12 credits"},
+    {name: "Gundark Ear Strips", description: "Strips of tender, peppered pork loin flash-fried in a jagged batter and served with a side of creamy Naboo garlic aioli. (They say if you pull one, it pulls back).", price: "10 credits"},
+    {name: "Kessel Spice Mud-Horn Wings", description: "Jumbo avian wings tossed in an authentic Mud-Horn egg-yolk butter sauce and dusted with contraband spice from the spice mines.", price: "13 credits"}
+]
+
 function createMenuSection(title, items){
     const menuHeader = document.createElement("div");
     menuHeader.classList.add("menu-header");
@@ -45,6 +52,7 @@ function createMenuSection(title, items){
 
 function createMenu(){
     createMenuSection("Main Dishes", mainItems);
+    createMenuSection("Side Dishes and Starters", sideItems);
 };
 
 export {createMenu};
