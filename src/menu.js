@@ -10,7 +10,7 @@ function createMain(){
     mainMenuHeader.appendChild(mainHeaderText);
 
     const mainMenuContent = document.createElement("div");
-    mainMenuContent.classList.add("menu-content")
+    mainMenuContent.classList.add("main-menu-content")
     displayContainer.appendChild(mainMenuContent);
 
     const mainItems = [
@@ -22,21 +22,24 @@ function createMain(){
     ]
 
     for (let i = 0; i < mainItems.length; i++){
+        const itemContainer = document.createElement("div");
+        itemContainer.classList.add("menu-item")
+        mainMenuContent.appendChild(itemContainer);
+
         const itemName = document.createElement("h3");
         itemName.classList.add("menu-item-name");
         itemName.textContent = mainItems[i].name;
-        mainMenuContent.appendChild(itemName);
+        itemContainer.appendChild(itemName);
 
         const itemDescription = document.createElement("p");
         itemDescription.classList.add("menu-item-description");
         itemDescription.textContent = mainItems[i].description;
-        mainMenuContent.appendChild(itemDescription);
+        itemContainer.appendChild(itemDescription);
 
         const itemPrice = document.createElement("p");
         itemPrice.classList.add("menu-item-price");
         itemPrice.textContent = mainItems[i].price;
-        mainMenuContent.appendChild(itemPrice);
-
+        itemContainer.appendChild(itemPrice);
     }
 };
 
