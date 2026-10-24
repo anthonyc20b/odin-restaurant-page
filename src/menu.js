@@ -23,6 +23,7 @@ const drinkItems = [
     {name: "Corellian Reserve Brandy", description: "Double-distilled on Han Solo’s homeworld. Smooth, oak-aged caramel finish with enough burn to jump-start a hyperdrive unit.", price: "14 credits"},
 ]
 
+// Creates the menu section with a header, item title, description, and price for each section
 function createMenuSection(title, items){
     const menuHeader = document.createElement("div");
     menuHeader.classList.add("menu-header", "menu-card");

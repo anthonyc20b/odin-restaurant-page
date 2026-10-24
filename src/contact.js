@@ -1,6 +1,6 @@
 const displayContainer = document.getElementById("content");
 
-// Using just a single function here as there will only be one section on this page.
+// Using just a single function here as there will only be one section on this page. Creates the header and contact cards for each staff member.
 function createContact(){
     const contactHeader = document.createElement("div");
     contactHeader.classList.add("contact-header", "menu-card");

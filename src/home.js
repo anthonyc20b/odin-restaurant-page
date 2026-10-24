@@ -1,5 +1,6 @@
 const displayContainer = document.getElementById("content");
 
+// Creates the welcome header section for the homepage.
 function createWelcome() {
     const welcomeContainer = document.createElement("div");
     welcomeContainer.id = "welcome-header";
@@ -11,6 +12,7 @@ function createWelcome() {
     welcomeContainer.appendChild(welcomeText);
 };
 
+// Creates the welcome description section for the home page.
 function createDescription(){
     const descriptionContainer = document.createElement("div");
     descriptionContainer.id = "description";
@@ -22,6 +24,7 @@ function createDescription(){
     descriptionContainer.appendChild(descriptionText);
 };
 
+// Creates the testimonail section for the home page.
 function createTestimonial(){
     const testimonialContainer = document.createElement("div");
     testimonialContainer.id = "testimonial";
@@ -36,6 +39,7 @@ function createTestimonial(){
     testimonialContainer.appendChild(testimonialText);
 };
 
+// Creates the hours section for the home page.
 function createHours(){
     const hoursContainer = document.createElement("div");
     hoursContainer.id = "hours-container";
@@ -63,6 +67,7 @@ function createHours(){
     };
 };
 
+// Calls all of the home page sections to create the home page as one piece.
 function createHomePage() {
     createWelcome();
     createDescription();
