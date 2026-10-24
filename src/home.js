@@ -59,22 +59,11 @@ function createHours(){
     };
 };
 
-function createFooter(){
-    const footerContainer = document.createElement("div");
-    footerContainer.id = "footer-container";
-    displayContainer.appendChild(footerContainer);
-
-    const footerText = document.createElement("p");
-    footerText.textContent = "Background image made by Logan Voss - https://unsplash.com/@loganvoss";
-    footerContainer.appendChild(footerText);
-};
-
 function createHomePage() {
     createWelcome();
     createDescription();
     createTestimonial();
     createHours();
-    createFooter();
 };
 
 export {createHomePage};
