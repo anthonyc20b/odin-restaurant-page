@@ -1,8 +1,11 @@
 :root {
     --content-background-color: rgba(10, 15, 30, 0.85);
+    --primary-text-color: #F0F4F8;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url(../images/hyperspace.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -17,8 +20,20 @@ body {
     background-color: var(--content-background-color);
     width: 100vw;
     height: 60px;
+    margin-bottom: 50px;
     justify-content: center;
     align-items: flex-end;
+}
+
+#footer {
+    display: flex;
+    background-color: var(--content-background-color);
+    width: 100vw;
+    height: 60px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto;
+    color: var(--primary-text-color);
 }
 
 nav {
@@ -36,3 +51,7 @@ nav > button {
 }
 
 /* Begin styling for the home page, will create a separate imported styles file for that page specifically once done testing */
+#content {
+    background-color: var(--content-background-color);
+    color: var(--primary-text-color);
+}
