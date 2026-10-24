@@ -1,6 +1,8 @@
 :root {
     --content-background-color: rgba(10, 15, 30, 0.85);
+    --primary-border-color: rgba(0, 212, 255, 0.4);
     --primary-text-color: #F0F4F8;
+    --accent-text-color: #FFB800;
 }
 
 body {
@@ -42,7 +44,8 @@ nav {
 }
 
 nav > button {
-    border: 1px solid black;
+    border: 1px solid var(--primary-border-color);
+    color: var(--primary-text-color);
     border-bottom: 0px;
     border-radius: 5px;
     font-size: 20px;
@@ -52,6 +55,30 @@ nav > button {
 
 /* Begin styling for the home page, will create a separate imported styles file for that page specifically once done testing */
 #content {
+    display: flex;
+    flex-direction: column;
     background-color: var(--content-background-color);
     color: var(--primary-text-color);
+
+    border: 2px solid rgba(0, 212, 255, 0.4);
+    border-radius: 25px;
+    width: 80%;
+    align-self: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#welcome-header, #description, #testimonial, #hours-container, .menu-header, .menu-content, .contact-header, .staff-member-card {
+    background: var(--content-background-color);
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 212, 255, 0.2);
+    backdrop-filter: blur(8px); /* Blurs the hyperspace lines behind the card */
+    border-radius: 12px;
+    color: var(--primary-text-color);
+    padding: 24px;
+    margin: 20px auto;
+}
+
+.menu-item-price {
+    color: var(--accent-text-color);
 }
