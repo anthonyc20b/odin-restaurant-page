@@ -12,10 +12,11 @@ A multi-section restaurant website built with JavaScript modules and Webpack for
 ---
 ## Features
 - Each page section is built in its own JavaScript module and rendered entirely through the DOM
+- Followed DRY (Don't Repeat Yourself!) to ensure each section was efficient and not repetitive
 - Custom tab switching between sections without reloading the page
-- Webpack bundles the modules into a single output
+- Webpack configured and bundles the modules into a single output
 - Semi-responsive layout that works on both mobile and desktop
-- Syled with a space theme using CSS variables, glassmorphism effects, and flexbox layout
+- Styled with a space theme using CSS variables, glassmorphism effects, and flexbox layout
 
 ---
 ## Built With
