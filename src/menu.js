@@ -25,7 +25,7 @@ const drinkItems = [
 
 function createMenuSection(title, items){
     const menuHeader = document.createElement("div");
-    menuHeader.classList.add("menu-header");
+    menuHeader.classList.add("menu-header", "menu-card");
     displayContainer.appendChild(menuHeader);
 
     const headerText = document.createElement("h2");
@@ -33,7 +33,7 @@ function createMenuSection(title, items){
     menuHeader.appendChild(headerText);
 
     const menuSectionContent = document.createElement("div");
-    menuSectionContent.classList.add("menu-content")
+    menuSectionContent.classList.add("menu-content", "menu-card")
     displayContainer.appendChild(menuSectionContent);
 
     for (let i = 0; i < items.length; i++){
