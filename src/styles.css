@@ -86,3 +86,7 @@ nav > button {
 .menu-item-description {
     color: var(--secondary-text-color);
 }
+
+#testimonial {
+    width: 70%;
+}
