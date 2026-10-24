@@ -1,3 +1,7 @@
+:root {
+    --content-background-color: rgba(10, 15, 30, 0.85);
+}
+
 body {
     background-image: url(../images/hyperspace.jpg);
     background-size: cover;
@@ -5,4 +9,30 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+    margin: 0px;
 }
+
+#navigation-header {
+    display: flex;
+    background-color: var(--content-background-color);
+    width: 100vw;
+    height: 60px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav > button {
+    border: 1px solid black;
+    border-bottom: 0px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 10px;
+}
+
+/* Begin styling for the home page, will create a separate imported styles file for that page specifically once done testing */
