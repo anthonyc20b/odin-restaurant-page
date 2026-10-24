@@ -15,6 +15,14 @@ const sideItems = [
     {name: "Kessel Spice Mud-Horn Wings", description: "Jumbo avian wings tossed in an authentic Mud-Horn egg-yolk butter sauce and dusted with contraband spice from the spice mines.", price: "13 credits"}
 ]
 
+const drinkItems = [
+    {name: "Jawa Juice", description: "Fermented skins of the native Tatooine zuchu fruit, infused with crushed ginger and pepper-spice. A stinging brew favored by sandcrawler mechanics.", price: "6 credits"},
+    {name: "Tatooine Blue Milk", description: "Freshly squeezed Bantha milk from the Lars Homestead, lightly sweetened with vaporator-condensed sugar and topped with a dust of glittery spice.", price: "6 credits"},
+    {name: "Bespin Sky Nectar", description: "Chilled beldon-gas fruit nectar layered over carbonated spring water, topped with a dense cloud of sweet whipped cream that hovers at the top of the chalice.", price: "8 credits"},
+    {name: "Hyperspace Lane", description: "Mid Rim indigo gin mixed with reactive tonic and citrus. The drink rapidly shifts from deep blue to vibrant purple when stirred with your glass straw.", price: "13 credits"},
+    {name: "Corellian Reserve Brandy", description: "Double-distilled on Han Solo’s homeworld. Smooth, oak-aged caramel finish with enough burn to jump-start a hyperdrive unit.", price: "14 credits"},
+]
+
 function createMenuSection(title, items){
     const menuHeader = document.createElement("div");
     menuHeader.classList.add("menu-header");
