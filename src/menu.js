@@ -61,6 +61,7 @@ function createMenuSection(title, items){
 function createMenu(){
     createMenuSection("Main Dishes", mainItems);
     createMenuSection("Side Dishes and Starters", sideItems);
+    createMenuSection("Drinks", drinkItems);
 };
 
 export {createMenu};
